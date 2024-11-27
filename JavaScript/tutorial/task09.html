@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // const userInputNumber = Number(prompt('100より大きい数値を入力してください。', ''));
+    // InputNumber: while (userInputNumber <= 100) {
+    //   userInputNumber;
+    //   if (userInputNumber > 100 || userInputNumber === '' || userInputNumber === null) {
+    //     break InputNumber;
+    //   }
+    // }
+    // 100 より大きい数値を入力するプロンプトを書いてください。もし訪問者が別の数値を入力したら – 再度、入力を促します。
+    // ループは、訪問者が 100 より大きい値を入力するか、入力をキャンセル/空行の入力をするまで訪ねます。
+    // ここでは、訪問者は数値のみを入力すると仮定します。このタスクでは、非数値に対する特別な処理を実装する必要はありません。
+    let numberInput;
+    do {
+      numberInput = Number(prompt('100より大きい数値を入力してください。', ''));
+    } while (numberInput <= 100 && numberInput !== '' && numberInput !== null);
+  </script>
+</body>
+
+</html>

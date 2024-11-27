@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const userName = prompt("あなたの名前は", '');
+
+    if (userName === "Admin") {
+      const passWord = prompt("あなたのパスワードは", '');
+
+      if (passWord === "TheMaster") {
+        alert("Welcome!");
+      } else if (passWord === '' || passWord === null) {
+        alert("Canceled.");
+      } else ("Wrong password");
+
+    } else if (userName === '' || userName === null) {
+      alert("Canceled");
+    } else {
+      alert("I don't know you");
+    }
+  </script>
+</body>
+
+</html>
