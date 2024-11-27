@@ -36,3 +36,18 @@ YakinikuLikeORHidakaya();
 // }
 
 // console.log(voteOfChoices);
+
+/**
+ * マックシェイク、どれ注文するか
+ */
+function macShake() {
+    const macShake = ["バニラ", "イチゴ", "チョコレート"];
+
+    // Math.random() * array.length で3以下の浮動小数生成
+    // 少数をMath.floorで切り捨て
+    const randomIndex = Math.floor(Math.random() * macShake.length);
+
+    console.log(macShake[randomIndex]);
+}
+
+macShake();
